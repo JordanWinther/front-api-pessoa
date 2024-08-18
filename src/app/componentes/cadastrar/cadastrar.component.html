@@ -1,0 +1,16 @@
+
+<form>
+  <h2>Cadastro de Usuários</h2>
+  <img alt="imgUser" src="assets/usuario.png" >
+  <div>
+    <input type="text" placeholder="nome"  id="nome" class="form-control" name="nome" [(ngModel)]="usuarioModel.nome">
+    <input type="number" placeholder="idade" name="idade" id="idade" class="form-control" [(ngModel)]="usuarioModel.idade" >
+  </div>
+  <div class="botoes">
+    <input type="button"  id="cadastrar" value="cadastrar" *ngIf="btnCadastro" class="btn btn-primary" (click)="cadastrarUsuario()" >
+    <input type="button"  id="alterar" value="alterar" *ngIf="!btnCadastro" class="btn btn-secundary" (click)="editarRecuperandoCliente()">
+    <input type="button"  id="excluir" value="excluir" *ngIf="!btnCadastro" class="btn btn-danger">
+    <input type="button"  id="cancelar" value="cancelar" *ngIf="!btnCadastro" class="btn btn-warning" (click)="cancelarSelecao()" >
+  </div>
+</form>
+<!-- <H3>{{usuario | json }}</H3> -->

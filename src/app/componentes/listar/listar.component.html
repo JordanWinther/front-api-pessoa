@@ -1,0 +1,33 @@
+
+
+
+
+  <div class="container" >
+    <div class="row">
+
+        <div class="col ">
+              <table class="table" *ngIf="tabela">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">id</th>
+                    <th scope="col">nome</th>
+                    <th scope="col">idade</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody *ngFor="let user of arrayOfUsers; index as i">
+                  <tr>
+                    <th scope="row">{{i+1}}</th>
+                    <td>{{ user.id }}</td>
+                    <td>{{ user.nome }}</td>
+                    <td>{{ user.idade }}</td>
+                    <td><button class=" btn btn-sm btn-success" (click)="selecionarUsuario(i)" >Selecionar</button></td>
+                  </tr>
+                </tbody>
+              </table>
+
+
+        </div>
+    </div>
+  </div>

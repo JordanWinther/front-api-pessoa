@@ -1,0 +1,27 @@
+h2{
+  margin-top:2rem;
+}
+.user-list {
+  list-style-type: none;
+  padding: 0;
+  width: 25rem;
+}
+.user-list-item {
+  display: inline-block;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+}
+.user-list-item:last-child {
+  border-right: none;
+}
+.user-list-item p {
+  margin: 0;
+}
+.user-list-item p:first-child {
+  font-weight: bold;
+}
+
+table{
+  width: 25rem;
+
+}
